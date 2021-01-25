@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<package packagerversion="1.9.4" version="2.0" xmlns="http://pear.php.net/dtd/package-2.0" xmlns:tasks="http://pear.php.net/dtd/tasks-1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://pear.php.net/dtd/tasks-1.0 http://pear.php.net/dtd/tasks-1.0.xsd http://pear.php.net/dtd/package-2.0 http://pear.php.net/dtd/package-2.0.xsd">
+ <name>yaz</name>
+ <channel>pecl.php.net</channel>
+ <summary>Z39.50/SRU client</summary>
+ <description>This extension implements a Z39.50/SRU client for PHP using the YAZ toolkit and the ZOOM framework.
+
+Find more information at:
+  http://www.indexdata.com/phpyaz
+  http://www.indexdata.com/yaz</description>
+ <lead>
+  <name>Adam Dickmeiss</name>
+  <user>dickmeiss</user>
+  <email>adam@indexdata.dk</email>
+  <active>yes</active>
+ </lead>
+ <date>2018-12-11</date>
+ <time>11:35:00</time>
+ <version>
+  <release>1.2.3</release>
+  <api>1.2.2</api>
+ </version>
+ <stability>
+  <release>stable</release>
+  <api>stable</api>
+ </stability>
+ <license uri="http://www.indexdata.com/licences/revised-bsd">revised BSD</license>
+ <notes>
+  Fix for PHP 7.3 API changes, and array_init always succeeds
+ </notes>
+ <contents>
+  <dir name="/">
+   <file name="config.m4" role="src" />
+   <file name="config.w32" role="src" />
+   <file name="LICENSE" role="doc" />
+   <file name="CREDITS" role="doc" />
+   <file name="php_yaz.c" role="src" />
+   <file name="php_yaz.h" role="src" />
+   <file name="README" role="doc" />
+   <file name="yaz.dsp" role="src" />
+   <dir name="tests">
+     <file name="connect.phpt" role="test"/>
+     <file name="ccl.phpt" role="test"/>
+     <file name="cql.phpt" role="test"/>
+     <file name="database.phpt" role="test"/>
+     <file name="record.phpt" role="test"/>
+     <file name="scan.phpt" role="test"/>
+   </dir>
+  </dir>
+ </contents>
+ <dependencies>
+  <required>
+   <php>
+    <min>5.0</min>
+   </php>
+   <pearinstaller>
+    <min>1.4.0b1</min>
+   </pearinstaller>
+  </required>
+ </dependencies>
+ <providesextension>yaz</providesextension>
+ <extsrcrelease>
+  <configureoption default="autodetect" name="with-yaz" prompt="path to YAZ installation?" />
+ </extsrcrelease>
+</package>
