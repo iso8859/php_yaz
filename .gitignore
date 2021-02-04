@@ -31,3 +31,4 @@ ChangeLog
 /php_yaz/pch.h
 /php_yaz/framework.h
 /.vs
+**/x64

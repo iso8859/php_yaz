@@ -11,7 +11,7 @@ Dans cette procédure le but est d'obtenir php_zay.dll avec comme dépendance ph
 Mon project Visual Studio 2017 est dans php_yaz\php_yaz.vcxproj
 
 
-### STEP 1 : COPMPILER PHP pour avoir php.lib qui link avec php7.dll
+### STEP 1 : COMPILER PHP pour avoir php.lib qui link avec php7.dll
 
 Pour compiler suivre cette procédure
 https://wiki.php.net/internals/windows/stepbystepbuild_sdk_2
