@@ -49,8 +49,10 @@ Bien cocher "source" lors de l'installation
 
 ### STEP 3 : RECUPER le code source php_yaz pour le compiler
 https://www.indexdata.com/resources/software/phpyaz/
+
 Récupérer le code ici
-git clone https://github.com/indexdata/phpyaz
+
+> git clone https://github.com/indexdata/phpyaz
 
 Créer un projet Visual Studio C++ DLL
 Mettre le seul fichier php_yaz.c
